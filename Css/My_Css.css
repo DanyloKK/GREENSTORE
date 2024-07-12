@@ -300,6 +300,9 @@ nav{
     justify-content: space-between;
 
 
+
+
+
 }
 
 .left_container{
@@ -312,13 +315,49 @@ nav{
     list-style: none;
     padding:12px 45px;
     line-height: 267%;
-
-
-
 }
 .listofleftcont li{
     white-space: nowrap;
 }
+.listdevcon{
+    display: flex;
+    max-width: 838px;
+    margin-bottom: 31px;
+    justify-content: space-between;
+
+
+}
+.listdevcon p{
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 107%;
+    color: #3d3d3d;
+}
+.listdevcon ul{
+    list-style: none;
+    display: flex;
+    gap:38px;
+}
+.listdevcon ul li a{
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 107%;
+    color: #3d3d3d;
+    font-family:'cera_round_pro_demoregular';
+
+}
+.listdevcon ul li a:hover{
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 107%;
+    color: #46a358;
+}
+.commontcentralcont{
+    display: flex;
+    flex-direction: column;
+}
+
 .listofleftcont li:not(:first-of-type){
     margin-left: 12px;
     font-weight: 700;
@@ -346,7 +385,7 @@ nav{
     text-decoration: none;
 }
 .central_container{
-    padding-top: 32px;
+    margin-bottom: 90px;
     max-width: 840px;
     display: flex;
     flex-wrap: wrap;
@@ -382,4 +421,51 @@ nav{
     margin-top: 365px;
     max-width: 360px;
 
+}
+.lastitemofcentcont ul{
+    flex-flow: row-reverse;
+    display: flex;
+    gap:10px;
+
+
+}
+.lastitemofcentcont ul li{
+    display: flex;
+    width:35px;
+    height:35px;
+    gap:10px;
+    list-style: none;
+    border: 1px solid #e5e5e5;
+    border-radius: 4px;
+
+
+}
+.lastitemofcentcont ul li a{
+    margin-top:8px;
+    margin-left: 10px;
+    text-decoration: none;
+    font-weight: 300;
+    font-size: 18px;
+    color: #3d3d3d;
+
+}
+.lastitemofcentcont ul li:hover{
+    border-radius: 4px;
+    background: #46a358;
+}
+.lastitemofcentcont ul li a:hover{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 89%;
+    color: #fff;
+}
+.lastitemofcentcont img{
+    order: -1;
+}
+
+
+
+
+.ThirdSection{
+    margin-top: 94px;
 }
