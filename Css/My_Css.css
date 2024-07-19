@@ -162,8 +162,7 @@ hr {
     margin: auto;
     justify-content: space-between;
     align-items: center;
-
-
+    border-bottom:1px solid #a5a5a5;
 }
 .container .ButtonLog{
     padding: 8px 17px;
@@ -174,9 +173,6 @@ header{
     margin-bottom: 12px;
 }
 
-nav{
-
-}
 .List{
     font-family:'cera_round_pro_demoregular';
     gap:50px;
@@ -185,13 +181,110 @@ nav{
     list-style: none;
 }
 
-
-.List li a{
+.List .ListofLink:after{
+    content: "";
+    width: 100%;
+    height: 3px;
+    background: #46a358;
+    position: relative;
+    top:13px;
+    display:block;
+    opacity: 0;
+}
+.List .ListofLink:hover:after{
+    content: "";
+    width: 100%;
+    height: 3px;
+    background: #46a358;
+    position: relative;
+    top:13px;
+    display:block;
+    opacity: 1;
+}
+.List .ListofLink .LinkOfList{
     text-decoration: none;
     font-weight: 400;
     font-size: 16px;
     color: #3d3d3d;
+    font-family:'cera_round_pro_demoregular';
 }
+.List li .LinkOfList:hover{
+    font-weight: 700;
+    font-size: 16px;
+    color: #3d3d3d;
+    font-family:'cera_round_pro_demoregular';
+}
+.List .ListofLink{
+    position: relative;
+}
+.ArrowOfMenu{
+    width: 6px;
+    height: 10px;
+    position:absolute;
+    right: 17px;
+    bottom: 13px;
+}
+.ArrowOfMenu:hover{
+    width: 6px;
+    height: 10px;
+    position:absolute;
+    right: 17px;
+    bottom: 13px;
+    transform: rotate(180deg);
+    transition: 0.6s;
+}
+
+
+
+.List .ListofLink ul{
+    padding: 7px 14px;
+    position: absolute;
+    top:44px;
+    left:-45px;
+    background: #edf6ee;
+    z-index: 1;
+    display:none;
+}
+.List .ListofLink:hover ul{
+    position: absolute;
+    top:44px;
+    left:-45px;
+    background: #edf6ee;
+    z-index: 1;
+    display:block;
+}
+.List .ListofLink ul li{
+    list-style: none;
+    min-width: 188px;
+    padding: 8px 14px;
+}
+.List .ListofLink ul li a{
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 16px;
+    color: #3d3d3d;
+    font-family:'cera_round_pro_demoregular';
+}
+/*
+.ListofLink ul .LastList{
+    position: relative;
+}
+
+.ListofLink ul .LastList ul{
+    position: absolute;
+    top:-103px;
+    left:202px;
+}
+
+.ListofLink ul .LastList ul:hover .LastList{
+    position: absolute;
+    top:-103px;
+    left:202px;
+}
+ */
+
+
+
 .ButtonLog{
     margin-left: 146px;
     text-decoration: none;
@@ -208,11 +301,15 @@ nav{
     margin-right: 7px;
 
 }
-.List a:hover{
+.List .LinkofList:hover{
     font-weight: 700;
     font-size: 16px;
     color: #3d3d3d;
 }
+
+
+
+
 .FirstSection{
     display: flex;
     max-width: 1200px;
@@ -400,12 +497,105 @@ nav{
 
 }
 .central_container article{
+    position: relative;
     width:calc(33.3% - 22px);
     background: #fbfbfb;
     border-top: 2px solid transparent;
 }
 .central_container article:hover{
     border-top: 2px solid #46a358;
+}
+.central_container article .sale{
+    position: absolute;
+    top:14px;
+    background: #46a358;
+    padding: 7px 8px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 100%;
+    color: #fff
+
+}
+.central_container article .discount{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 89%;
+    color: #a5a5a5;
+    margin-left:16px;
+    text-decoration: line-through;
+}
+.central_container article .CartListOne  {
+    position: absolute;
+    bottom: 50px;
+    left: calc(50% - 63px);
+    display: flex;
+    gap: 26px;
+}
+.central_container article .CartListTwo{
+    position: absolute;
+    bottom: 50px;
+    left: calc(50% - 63px);
+    display: flex;
+    gap: 26px;
+}
+.central_container article .CartListThree{
+    position: absolute;
+    bottom: 41px;
+    left: calc(50% - 63px);
+    display: flex;
+    gap: 26px;
+}
+.central_container article .CartListFour{
+    position: absolute;
+    bottom: 50px;
+    left: calc(50% - 63px);
+    display: flex;
+    gap: 26px;
+}
+.central_container article .CartListOne li{
+    list-style: none;
+}
+.central_container article .CartListOne li a img{
+    width: 20px;
+    height: 20px ;
+    opacity: 0;
+}
+.central_container article:hover .CartListOne li a img{
+    opacity: 1;
+}
+
+.central_container article .CartListTwo li{
+    list-style: none;
+}
+.central_container article .CartListTwo li a img{
+    width: 20px;
+    height: 20px ;
+    opacity: 0;
+}
+.central_container article:hover .CartListTwo li a img{
+    opacity: 1;
+}
+.central_container article .CartListThree li{
+    list-style: none;
+}
+.central_container article .CartListThree li a img{
+    width: 20px;
+    height: 20px ;
+    opacity: 0;
+}
+.central_container article:hover .CartListThree li a img{
+    opacity: 1;
+}
+.central_container article .CartListFour li{
+    list-style: none;
+}
+.central_container article .CartListFour li a img{
+    width: 20px;
+    height: 20px ;
+    opacity: 0;
+}
+.central_container article:hover .CartListFour li a img{
+    opacity: 1;
 }
 .central_container article h3{
     padding-top: 20px;
@@ -649,6 +839,9 @@ nav{
     line-height: 114%;
     color: #3d3d3d;
     text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    margin-bottom: 13px;
     font-family: 'cera_round_pro_demoregular';
 }
 .FourFlowers article a:hover{
@@ -664,9 +857,9 @@ nav{
     background-image: url("../Images/Arrow - Right.svg");
     width: 12px;
     height:10px;
-    position: relative;
-    top: 2px;
-    left:6px;
+    margin-left:6px;
+
+
 }
 .FourFlowers article a:hover:after{
     background-image:url("../Images/Arrow - RightGreen.svg");
