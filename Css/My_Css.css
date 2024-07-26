@@ -1072,7 +1072,7 @@ header{
     height: 20px;
     position: absolute;
     left: -30px;
-    top:2px;
+    top:0;
 }
 .DivOfSixthSec .DivInSecond a{
     text-decoration: none;
@@ -1089,7 +1089,7 @@ header{
     height: 20px;
     position: absolute;
     left: -30px;
-    top:2px;
+    top:0;
 }
 .DivOfSixthSec .DivInThird a{
     text-decoration: none;
