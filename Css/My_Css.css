@@ -93,7 +93,7 @@
     width: 300px;
     height: 40px;
 }
-button{
+.button{
     margin-left: 107px;
     margin-bottom: 39px;
     font-weight: 700;
@@ -157,6 +157,7 @@ hr {
 
 
 .container{
+    padding-bottom: 13px;
     display: flex;
     max-width: 1200px;
     margin: auto;
@@ -180,28 +181,35 @@ header{
     max-width: 351px;
     list-style: none;
 }
-
-.List .ListofLink:after{
+.List > li:after{
     content: "";
     width: 100%;
     height: 3px;
     background: #46a358;
     position: relative;
-    top:13px;
+    top:26px;
     display:block;
     opacity: 0;
 }
-.List .ListofLink:hover:after{
+.List > li:hover:after{
     content: "";
     width: 100%;
     height: 3px;
     background: #46a358;
     position: relative;
-    top:13px;
+    top:26px;
     display:block;
     opacity: 1;
 }
-.List .ListofLink .LinkOfList{
+
+.List li a{
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 16px;
+    color: #3d3d3d;
+    font-family:'cera_round_pro_demoregular';
+}
+.List .ListofLink a{
     text-decoration: none;
     font-weight: 400;
     font-size: 16px;
@@ -214,9 +222,17 @@ header{
     color: #3d3d3d;
     font-family:'cera_round_pro_demoregular';
 }
+.List li .LinkOfList:hover{
+    font-weight: 700;
+    font-size: 16px;
+    color: #3d3d3d;
+    font-family:'cera_round_pro_demoregular';
+}
+
 .List .ListofLink{
     position: relative;
 }
+
 .ArrowOfMenu{
     width: 6px;
     height: 10px;
@@ -236,57 +252,76 @@ header{
 
 
 
-.List .ListofLink ul{
-    padding: 7px 14px;
+.List .ListofLink > ul {
+    padding-top: 40px;
     position: absolute;
-    top:44px;
+    top:17px;
     left:-45px;
-    background: #edf6ee;
     z-index: 1;
-    display:none;
+    display: none;
+
+
 }
-.List .ListofLink:hover ul{
-    position: absolute;
-    top:44px;
-    left:-45px;
+.List .ListofLink:hover > ul{
+    display: block;
+}
+.List .ListofLink ul > li{
     background: #edf6ee;
-    z-index: 1;
-    display:block;
-}
-.List .ListofLink ul li{
     list-style: none;
     min-width: 188px;
     padding: 8px 14px;
 }
-.List .ListofLink ul li a{
+.List .ListofLink ul >li:hover{
+    background-color: green;
+}
+.List .ListofLink ul li  a{
     text-decoration: none;
     font-weight: 400;
     font-size: 16px;
     color: #3d3d3d;
     font-family:'cera_round_pro_demoregular';
 }
-/*
-.ListofLink ul .LastList{
+
+
+
+.List .ListofLink ul .SecondStageList{
     position: relative;
 }
-
-.ListofLink ul .LastList ul{
+.SecondStageList > ul{
     position: absolute;
-    top:-103px;
-    left:202px;
+    top:-96px;
+    left:188px;
+    display: none;
+
+}
+.SecondStageList ul > li{
+    background: #edf6ee;
+    list-style: none;
+    min-width: 188px;
+    padding: 8px 14px;
+    display: block;
+}
+.SecondStageList ul > li:hover{
+    background-color: green;
+}
+.ListofLink ul .SecondStageList:hover  ul{
+    display: block;
 }
 
-.ListofLink ul .LastList ul:hover .LastList{
-    position: absolute;
-    top:-103px;
-    left:202px;
+
+.SecondStageList ul li > a{
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 16px;
+    color: #3d3d3d;
+    font-family:'cera_round_pro_demoregular';
 }
- */
+
 
 
 
 .ButtonLog{
-    margin-left: 146px;
+
     text-decoration: none;
     background-color: #46a358;
     font-weight: 500;
@@ -415,6 +450,9 @@ header{
 .listofleftcont li{
     white-space: nowrap;
 }
+.listofleftcont li:first-of-type{
+    margin-bottom:7px;
+}
 .listdevcon{
     display: flex;
     max-width: 838px;
@@ -461,31 +499,29 @@ header{
     flex-direction: column;
 }
 
-.listofleftcont li:not(:first-of-type){
-    margin-left: 12px;
-    font-weight: 700;
-    font-size: 15px;
-    line-height: 300%;
-    color: #46a358;
-}
-.listofleftcont .leftlist{
+.listofleftcont:first-of-type {
     font-weight: 700;
     font-size: 18px;
     line-height: 89%;
     color: #3d3d3d;
 }
-.listofleftcont .aa{
-    text-decoration: none;
-    font-weight: 400;
-    color: #3d3d3d;
-    font-family:'cera_round_pro_demoregular';
-}
-.listofleftcont .aa:hover{
+.listofleftcont li a{
+    margin-left: 12px;
     font-weight: 700;
     font-size: 15px;
-    line-height: 267%;
+    line-height: 300%;
+    color:#3d3d3d;
+}
+.listofleftcont a{
+    text-decoration: none;
+}
+.listofleftcont li a:hover{
+    font-weight: 700;
+    font-size: 15px;
     color: #46a358;
     text-decoration: none;
+    font-family:'cera_round_pro_demoregular';
+
 }
 .central_container{
     margin-bottom: 90px;
@@ -555,47 +591,60 @@ header{
 .central_container article .CartListOne li{
     list-style: none;
 }
-.central_container article .CartListOne li a img{
+.central_container article .CartListOne li a svg{
     width: 20px;
     height: 20px ;
     opacity: 0;
 }
-.central_container article:hover .CartListOne li a img{
+.central_container article:hover .CartListOne li a svg{
     opacity: 1;
 }
+.central_container article .CartListOne li:first-of-type:hover a svg path{
+    fill:#46a358;
+}
+
 
 .central_container article .CartListTwo li{
     list-style: none;
 }
-.central_container article .CartListTwo li a img{
+.central_container article .CartListTwo li a svg{
     width: 20px;
     height: 20px ;
     opacity: 0;
 }
-.central_container article:hover .CartListTwo li a img{
+.central_container article:hover .CartListTwo li a svg{
     opacity: 1;
+}
+.central_container article .CartListTwo li:first-of-type:hover a svg path{
+    fill:#46a358;
 }
 .central_container article .CartListThree li{
     list-style: none;
 }
-.central_container article .CartListThree li a img{
+.central_container article .CartListThree li a svg{
     width: 20px;
     height: 20px ;
     opacity: 0;
 }
-.central_container article:hover .CartListThree li a img{
+.central_container article:hover .CartListThree li a svg{
     opacity: 1;
+}
+.central_container article .CartListThree li:first-of-type:hover a svg path{
+    fill:#46a358;
 }
 .central_container article .CartListFour li{
     list-style: none;
 }
-.central_container article .CartListFour li a img{
+.central_container article .CartListFour li a svg{
     width: 20px;
     height: 20px ;
     opacity: 0;
 }
-.central_container article:hover .CartListFour li a img{
+.central_container article:hover .CartListFour li a svg{
     opacity: 1;
+}
+.central_container article .CartListFour li:first-of-type:hover a svg path{
+    fill:#46a358;
 }
 .central_container article h3{
     padding-top: 20px;
@@ -657,14 +706,17 @@ header{
     color: #3d3d3d;
 
 }
-.lastitemofcentcont ul li:hover{
+.lastitemofcentcont ul li:hover {
     border-radius: 4px;
     background: #46a358;
 }
-.lastitemofcentcont ul li a:hover{
+.lastitemofcentcont ul li:hover a{
     font-weight: 700;
     font-size: 18px;
     color: #fff;
+}
+.lastitemofcentcont ul li:hover a svg path{
+    stroke: #e5e5e5;
 }
 .ThirdSection{
     margin-top: 94px;
@@ -775,7 +827,9 @@ header{
 }
 
 
-
+.FourthSection{
+    margin-bottom: 100px;
+}
 .Blog{
     max-width: 1200px;
     margin: auto;
@@ -863,5 +917,266 @@ header{
 }
 .FourFlowers article a:hover:after{
     background-image:url("../Images/Arrow - RightGreen.svg");
+}
+
+
+
+.DivOfFifth{
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 61px;
+}
+.DivOfFifth article:first-of-type{
+    margin-left: 25px;
+}
+.DivOfFifth article{
+    margin-bottom: 25px;
+    position: relative;
+}
+.DivOfFifth article:after{
+    top: 0;
+    left: 230px;
+    content: "";
+    position: absolute;
+    background: rgba(70, 163, 88, 0.2);
+    width: 1px;
+    height: 197px;
+    transform: rotate(180deg);
+
+}
+.DivOfFifth article img{
+    margin-bottom: 15px;
+}
+.DivOfFifth article h4{
+    margin-bottom: 9px;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 94%;
+    color: #3d3d3d;
+    font-family: 'cera_round_pro_demoregular';
+
+}
+.DivOfFifth article p{
+    margin-bottom: 24px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 157%;
+    color: #727272;
+    font-family: 'cera_round_pro_demoregular';
+}
+
+
+.InnerDivofFifth{
+    padding-top: 15px;
+    max-width: 354px;
+}
+.DivOfFifth .InnerDivofFifth h4{
+    margin-bottom: 25px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 89%;
+    color: #3d3d3d;
+    font-family: 'cera_round_pro_demoregular';
+}
+
+
+
+
+.DivOfFifth .InnerDivofFifth{
+    margin-right: 25px;
+}
+
+.DivOfFifth .InnerDivofFifth p{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 157%;
+    color: #727272;
+    font-family: 'cera_round_pro_demoregular';
+}
+.FormOfFifthSec{
+    display: flex;
+    margin-bottom: 18px;
+}
+.DivOfFifth .InnerDivofFifth .FormOfFifthSec input {
+    padding: 11px 12px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 114%;
+    color: #acacac;
+    width: 76%;
+    display: inline-block;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.06);
+    background: #fff;
+    border-radius:6px 0 0 6px;
+    border-color: transparent;
+}
+.FormOfFifthSec button{
+    border-color: transparent;
+    width: 24%;
+    border-radius: 0 6px 6px 0;
+    background: #46a358;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 89%;
+    color: #fff;
+    font-family: 'cera_round_pro_demoregular';
+}
+
+.DivOfSixthSec{
+    background: linear-gradient(90deg, #edf6ef 0%, #52c368 100%);
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 29px;
+    padding-bottom: 15px;
+
+}
+.DivOfSixthSec div  img{
+    margin-left: 22px;
+
+}
+.DivOfSixthSec .DivInFirst{
+    position: relative;
+}
+.DivOfSixthSec .DivInFirst a:before{
+    background-image: url("../Images/LocationOf.svg");
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: -30px;
+    top:7px;
+}
+.DivOfSixthSec .DivInFirst a{
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 157%;
+    color: #3d3d3d;
+    font-family: 'cera_round_pro_demoregular';
+
+}
+.DivOfSixthSec .DivInSecond{
+    top: 8px;
+    position: relative;
+}
+.DivOfSixthSec .DivInSecond a:before{
+    background-image: url("../Images/Mail.svg");
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: -30px;
+    top:2px;
+}
+.DivOfSixthSec .DivInSecond a{
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 14px;
+    color: #3d3d3d;
+    font-family: 'cera_round_pro_demoregular';
+}
+.DivOfSixthSec .DivInThird a:before{
+    background-image: url("../Images/Phone.svg");
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: -30px;
+    top:2px;
+}
+.DivOfSixthSec .DivInThird a{
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 14px;
+    color: #3d3d3d;
+    font-family: 'cera_round_pro_demoregular';
+}
+.DivOfSixthSec .DivInThird{
+    position: relative;
+    right: 22px;
+    top:8px;
+}
+
+
+
+.LastContainer{
+    background: #fbfbfb;
+    padding-top: 33px;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 29px;
+    border-bottom:1px solid rgba(70, 163, 88, 0.2);
+}
+.LastContainer > ul{
+    position: relative;
+}
+.LastContainer > ul:first-of-type{
+    left:25px;
+}
+.LastContainer > ul:nth-of-type(2){
+    right:25px;
+}
+.LastContainer > ul:last-of-type{
+    right: 90px;
+}
+.LastContainer div{
+    position: relative;
+    right:145px;
+}
+
+
+.LastContainer > ul li a{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 215%;
+    color: #3d3d3d;
+    text-decoration: none;
+    font-family: 'cera_round_pro_demoregular';
+}
+.LastContainer > ul li{
+    list-style: none;
+}
+.LastContainer > ul .HeadList{
+    padding-bottom: 8px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 89%;
+    color: #3d3d3d;
+    font-family: 'cera_round_pro_demoregular';
+}
+.LastContainer div p{
+    font-family: 'cera_round_pro_demoregular';
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 89%;
+    color: #3d3d3d;
+    margin-bottom: 20px;
+}
+.LastContainer div ul{
+    display:flex;
+    gap:10px;
+    margin-bottom: 33px;
+}
+.LastContainer div ul li{
+    list-style: none;
+}
+
+.LowerP{
+    margin-top: 6px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 214%;
+    color: #3d3d3d;
+    font-family: 'cera_round_pro_demoregular';
+    text-align: center;
 }
 
