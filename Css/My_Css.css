@@ -186,7 +186,7 @@ html body{
     animation-name: loadingbar;
     animation-timing-function: steps(3);
     animation-iteration-count: infinite;
-    animation-duration: 1gis;
+    animation-duration: 1s;
 
 
 
