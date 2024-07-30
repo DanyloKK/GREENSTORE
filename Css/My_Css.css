@@ -175,65 +175,9 @@ html body{
     top: 50%;
     left: 45%;
 }
-.Spoto{
-    top: 53.5%;
-    left: 51.8%;
-    position: absolute;
-    width: 5px;
-    height: 5px;
-    background: #edf6ef;
-    border-radius: 50%;
-    animation-name: loadingbar;
-    animation-timing-function: steps(3);
-    animation-iteration-count: infinite;
-    animation-duration: 1s;
 
 
 
-}
-.Spott{
-    top: 53.5%;
-    left: 52.8%;
-    position: absolute;
-    width: 5px;
-    height: 5px;
-    background: #edf6ef;
-    border-radius: 50%;
-    animation-name: loadingbar;
-    animation-timing-function: steps(3);
-    animation-iteration-count: infinite;
-    animation-duration: 1s;
-    animation-delay: 0.1s;
-
-}
-.Spotth{
-    top: 53.5%;
-    left: 53.8%;
-    position: absolute;
-    width: 5px;
-    height: 5px;
-    background: #edf6ef;
-    border-radius: 50%;
-    animation-name: loadingbar;
-    animation-timing-function: steps(3);
-    animation-iteration-count: infinite;
-    animation-duration: 1s;
-    animation-delay: 0.2s;
-
-}
-
-
-
-@keyframes loadingbar{
-    0% {
-     visibility: hidden;
-
-    }
-100% {
-    visibility: visible;
-
-}
-}
 
 
 
