@@ -23,6 +23,68 @@
 
 
 }
+html body{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    animation-name: GetBack;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-delay: 1s;
+}
+
+.BackGround{
+    width: 100%;
+    height: 100%;
+    background: #77929F;
+    animation-name: TemporaryBack;
+    animation-duration: 7s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes TemporaryBack {
+    0%{
+        background: #77929F;
+    }
+    50%{
+        background: lightcoral
+    }
+    75%{
+        background: lightpink;
+    }
+    100%{
+        background: lightblue;
+
+    }
+}
+.Preloader{
+    position: absolute;
+    top:45%;
+    left: 45%;
+    width: 45px;
+    height:45px;
+    border: 7px solid #f3f3f3;
+    border-top: 7px solid yellowgreen;
+    border-radius: 50%;
+    animation-name: Preloader;
+    animation-duration: 1.7s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    visibility: visible;
+
+}
+@keyframes Preloader {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+
+}
+
+
+
 
 
 .img{
@@ -157,6 +219,18 @@ hr {
 
 
 
+
+    .FirstSection{
+        max-width: 750px;
+    }
+
+
+.LinkOfFirstImage{
+    max-width: 100%;
+}
+.Firstimage{
+    width: 100%;
+}
 
 .container{
     padding-bottom: 13px;
@@ -337,6 +411,7 @@ header{
 .Imagi{
     margin-right: 7px;
 
+
 }
 .List .LinkofList:hover{
     font-weight: 700;
@@ -356,6 +431,7 @@ header{
 
 }
 .divo{
+  max-width: 545px;
    padding-top: 68px;
     margin-left:40px;
 
@@ -369,9 +445,13 @@ header{
 }
 .divooo img:first-of-type{
     position: absolute;
-    top:285px;
-    left: 55px;
+    top:66%;
+    left:7%;
 
+
+}
+.BigFlower{
+    max-width: 100%;
 }
 .FirstSection h2{
     max-width: 300px;
@@ -414,6 +494,8 @@ header{
 
 
 
+
+
 .FirstSection a{
     text-decoration: none;
     background-color: #46a358;
@@ -427,6 +509,7 @@ header{
 }
 
 
+
 .SecondSection{
     padding-top: 28px;
 
@@ -436,11 +519,6 @@ header{
     margin: auto;
     display: flex;
     justify-content: space-between;
-
-
-
-
-
 }
 
 
@@ -499,6 +577,7 @@ header{
 .commontcentralcont{
     display: flex;
     flex-direction: column;
+    max-width: 840px;
 }
 
 .listofleftcont:first-of-type {
@@ -1181,6 +1260,8 @@ header{
     font-family: 'cera_round_pro_demoregular';
     text-align: center;
 }
+
+
 
 
 
