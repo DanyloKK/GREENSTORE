@@ -7,9 +7,17 @@ $('.owl-carousel').owlCarousel({
         0:{
             items:1
         },
+        760:{
+            items:3
+        },
         1100:{
             items:4
         }
+
     }
 
 })
+
+$( function() {
+    $( "#accordion" ).accordion();
+} );

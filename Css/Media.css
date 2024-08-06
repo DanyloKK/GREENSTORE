@@ -107,6 +107,9 @@
             left: 105px;
 
         }
+        .BigFlower{
+           width: 350px;
+        }
 
         .FirstSection h2 {
             font-size: 10px;
@@ -130,6 +133,220 @@
 
         .central_container article {
             width: calc(75% - 22px);
+        }
+        .central_container article ul img{
+            width: 100%;
+        }
+        .commontcentralcont{
+            margin-left: 150px;
+        }
+        .listdevcon{
+            flex-wrap: wrap;
+        }
+        .listdevcon p{
+            margin-top: 10px;
+        }
+        .leftcont_nd_image ul li a{
+            font-size: 12px;
+        }
+
+        .ImageContainer img{
+            width: 100%;
+            margin-left: 50px;
+        }
+        .containerofthirdsection{
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .containerofthirdsection .leftArticle div h3{
+            font-size: 15px;
+        }
+        .containerofthirdsection .leftArticle div p{
+            font-size: 12px;
+        }
+        .containerofthirdsection .leftArticle div a{
+            font-size: 11px
+        }
+        .containerofthirdsection .rightArticle div h3{
+            font-size: 15px;
+        }
+        .containerofthirdsection .rightArticle div p{
+            font-size: 12px;
+        }
+        .containerofthirdsection .rightArticle div a{
+            font-size: 11px
+        }
+        .Blog h2{
+            font-size: 22px;
+        }
+        .Blog p{
+            font-size: 11px;
+        }
+        .owl-carousel .owl-item img{
+              width:200px;
+        }
+        .owl-item{
+
+        }
+        .owl-carousel{
+            max-height: 300px;
+        }
+        .owl-stage-outer{
+            max-width: 700px;
+            margin: 0 40px 0 40px;
+        }
+
+
+       .FourFlowers article span{
+           font-size: 11px;
+       }
+        .FourFlowers article h3{
+            font-size: 16px;
+        }
+        .FourFlowers article p{
+            font-size: 11px;
+
+        }
+        .FourFlowers article a {
+            font-size: 11px;
+        }
+        .DivOfFifth{
+            margin:0 35px 40px 35px;
+            gap:15px;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .DivOfFifth h4{
+            max-width: 100px;
+            font-size: 14px;
+        }
+        .DivOfFifth p{
+            max-width: 250px;
+            font-size: 11px;
+        }
+        .DivOfFifth article:after{
+            display: none;
+        }
+        .InnerDivofFifth h4{
+            font-size: 15px;
+        }
+        .InnerDivofFifth{
+
+        }
+        .DivOfSixthSec div img{
+            width: 100%;
+
+        }
+        .DivOfSixthSec div img{
+            display: none;
+
+
+        }
+        .DivOfSixthSec div:first-of-type{
+            margin-left: 25px;
+            content: "";
+            width: 35px;
+            height: 35px;
+            background-image: url("../images/Vector.svg");
+        }
+        .DivOfSixthSec .DivInFirst a{
+            font-size: 11px;
+        }
+        .DivOfSixthSec .DivInSecond a{
+            font-size: 11px;
+        }
+        .DivOfSixthSec .DivInThird a{
+            font-size: 11px;
+        }
+        .FormOfFifthSec button{
+            font-size: 14px;
+        }
+
+        .LastSection .LastContainer ul{
+
+
+        }
+        .LastSection .LastContainer div p{
+            font-size: 15px;
+        }
+        .LastSection .LastContainer ul li a{
+            font-size: 11px;
+        }
+        @media (max-width: 591px){
+            .FirstSection{
+                display: flex;
+                flex-wrap: wrap;
+            }
+        }
+        @media (max-width: 431px){
+            .divo{
+                margin-bottom: 10px;
+
+            }
+            .divo .BigFlower{
+                margin-right: 117px;
+            }
+           .container{
+               max-width: 370px;
+           }
+            .container .LinkOfFirstImage img{
+                display: none;
+            }
+            .container .LinkOfFirstImage{
+                content: "";
+                width: 35px;
+                height: 35px;
+                background-image: url("../images/Vector.svg");
+            }
+             .List li a{
+                 font-size: 10px;
+             }
+             .List .ListofLink a{
+                 font-size: 9px;
+             }
+             .List{
+                 gap:20px;
+             }
+             .ButtonLog span{
+                 display: none;
+
+             }
+            .ButtonLog img {
+                margin-right: 0;
+
+            }
+            .FirstSection{
+                max-width: 370px;
+            }
+            .FirstSection .divo h2{
+                font-size: 8px;
+            }
+            .FirstSection .divo h1{
+                font-size: 27px;
+
+            }
+            .FirstSection .divo span{
+                font-size: 27px;
+            }
+            .FirstSection .divo p{
+                font-size: 8px;
+            }
+            .FirstSection a{
+                padding: 5px 10px;
+                font-size: 10px;
+            }
+            .divooo .BigFlower{
+                position: relative;
+                left:35px;
+            }
+            .divooo img:first-of-type{
+                width: 50px;
+                position: relative;
+                top:200px;
+
+
+            }
+
         }
     }
 
